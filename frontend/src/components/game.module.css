@@ -1,0 +1,54 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0b132b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.playerList {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.playerList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playerList li {
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.betButton {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.betButton:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.betButton:hover {
+  background-color: #ffaa00;
+}
